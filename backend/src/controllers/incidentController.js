@@ -9,9 +9,17 @@ module.exports = {
         console.log(count)
 
         const incidents = await connection('incidents')
+            .join('ongs', 'ongs.id', '=', 'incidents.ong_id')
             .limit(6)
             .offset((page-1) * 6)
-            .select('*');
+            .select(
+                'incidents.*', 
+                'ongs.name', 
+                'ongs.email',
+                'ongs.whatsapp',
+                'ongs.city',
+                'ongs.uf'
+            );
 
         res.header('X-Total-Count', count['count(*)']);
         
