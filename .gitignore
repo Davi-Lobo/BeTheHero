@@ -1,0 +1,8 @@
+# Node things
+node_modules/
+
+# Yarn Things
+yarn.lock
+
+# Others
+.vscode
