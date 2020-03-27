@@ -47,3 +47,22 @@ form input {
 .button-submit:hover {
     filter: brightness(90%);
 }
+
+.back-link {
+    align-items: center;
+    color: #41414d;
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 40px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-in;
+}
+
+.back-link:hover {
+    opacity: 0.8;
+}
+
+.back-link svg {
+    margin-right: 8px;
+}
