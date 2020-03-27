@@ -1,3 +1,43 @@
-h1 {
-    color: #7159c1;
+.logon-container {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1120px;
+    width: 100%;
 }
+
+.logon-container section.form {
+    width: 100%;
+    max-width: 350px;
+    margin-right: 30px;
+}
+
+.logon-container section.form form {
+    margin-top: 100px;
+}
+
+    .logon-container section.form form h1 {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .logon-container section.form form a {
+        align-items: center;
+        color: #41414d;
+        display: flex;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 40px;
+        text-decoration: none;
+        transition: opacity 0.2s ease-in;
+    }
+
+    .logon-container section.form form a:hover {
+        opacity: 0.8;
+    }
+
+        .logon-container section.form form a svg {
+            margin-right: 8px;
+        }

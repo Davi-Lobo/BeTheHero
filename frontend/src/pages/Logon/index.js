@@ -11,19 +11,19 @@ export default function Logon() {
     return (
         <div className="logon-container">
             <section className="form">
+                <img src={logo} alt="Logo" className="img"/>
+
                 <form action="">
                     <h1>Faça seu logon</h1>
 
                     <input type="text" placeholder="Sua ID"/>
-                    <button type="submit">Entrar</button>
+                    <button className="button-submit" type="submit">Entrar</button>
                     
                     <a href="/register">
                         <FiLogIn size={16} color="E02041"/>
                         Não tenho cadastro
                     </a>
                 </form>
-
-                <img src={logo} alt="Logo" className="img"/>
             </section>
 
             <img src={heroesImg} alt="Heroes" className="img"/>
