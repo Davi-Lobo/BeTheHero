@@ -24,12 +24,24 @@ button {
 }
 
 form input {
-    width: 100%;
-    height: 60px;
-    color: #333;
-    border: 1px solid #dcdce6;
     border-radius: 8px;
+    border: 1px solid #dcdce6;
+    color: #333;
+    height: 60px;
     padding: 0 24px;
+    width: 100%;
+}
+
+form textarea {
+    border-radius: 8px;
+    border: 1px solid #dcdce6;
+    color: #333;
+    height: 60px;
+    line-height: 24px;
+    min-height: 140px;
+    padding: 20px;
+    width: 100%;
+    resize: none;
 }
 
 .button-submit {
