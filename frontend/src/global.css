@@ -30,6 +30,7 @@ form input {
     height: 60px;
     padding: 0 24px;
     width: 100%;
+    font-size: 16px;
 }
 
 form textarea {
@@ -39,9 +40,11 @@ form textarea {
     height: 60px;
     line-height: 24px;
     min-height: 140px;
-    padding: 20px;
+    font-size: 16px;
+    padding: 24px;
     width: 100%;
     resize: none;
+    font-family: inherit;
 }
 
 .button-submit {
