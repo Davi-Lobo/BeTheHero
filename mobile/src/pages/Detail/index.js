@@ -13,7 +13,7 @@ export default function Detail() {
     const route = useRoute();
 
     const incident = route.params.incident;
-    const message = 'Olá, estou entrando em contato para mostrar que a função do app de enviar uma mensagem pelo whatsapp está funcionando totalmente. \r\n \r\n Via: Be The Hero';
+    const message = `Olá ${incident.name}, estou entrando em contato pois gostaria de ajudar no caso "${incident.title}" com o valor de ${Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL'}).format(incident.value)}.`;
 
     function navigateBack() {
         navigation.goBack();
@@ -21,14 +21,14 @@ export default function Detail() {
 
     function sendMail() {
         MailComposer.composeAsync({
-            subject: 'Héroi do caso: Animais de rua',
-            recipients: ['davi.lobo.gs@gmail.com'],
+            subject: `Herói do caso: ${incident.title}`,
+            recipients: [incident.email],
             body: message,
         });
     }
 
     function sendWhatsapp() {
-        Linking.openURL(`whatsapp://send?phone=+558597697556&text=${message}`);
+        Linking.openURL(`whatsapp://send?phone=+55${incident.whatsapp}&text=${message}`);
     }
 
     return(
