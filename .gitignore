@@ -9,7 +9,6 @@ yarn-error.log
 # Others
 .vscode
 .DS_Store
-.expo/
 npm-debug.*
 *.jks
 *.p8
