@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Blank Template",
-    "slug": "mobile",
+    "name": "Be The Hero",
+    "slug": "bethehero",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
@@ -11,11 +11,11 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/icon2.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash2.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#E02041"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
